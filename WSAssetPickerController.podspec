@@ -12,7 +12,7 @@ Pod::Spec.new do|s|
     s.framework = "QuartzCore", "AssetsLibrary", "UIKit", "CoreGraphics"
     s.requires_arc = true
     #s.resources = ["Images/*.png"]
-    #s.resource_bundles = {'WSAssetBundle' => ['Images/*.png']}
-    s.resources = "demo/Images/photo_select_asset_choose@2x.png","demo/Images/photo_select_asset_unchoose@2x.png"
+    s.resource_bundles = {'WSAssetBundle' => ['Images/*.png']}
+    #s.resources = "demo/Images/photo_select_asset_choose@2x.png","demo/Images/photo_select_asset_unchoose@2x.png"
     #s.resources = "demo/WSAssetViewSelectionIndicator.png","demo/WSAssetViewSelectionIndicator@2x.png"
 end
