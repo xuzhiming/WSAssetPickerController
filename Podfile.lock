@@ -1,10 +1,17 @@
 PODS:
   - TSMessages (0.9.3)
+  - WSAssetPickerController (0.2.1)
 
 DEPENDENCIES:
   - TSMessages (= 0.9.3)
+  - WSAssetPickerController (from `./`)
+
+EXTERNAL SOURCES:
+  WSAssetPickerController:
+    :path: ./
 
 SPEC CHECKSUMS:
-  TSMessages: e741d102e8291074b4ee7545b53c90ed5f220dd5
+  TSMessages: de3b05968ed3fab63a159870354a2f4da7185789
+  WSAssetPickerController: d6c426c858b5562b60422d460a50758f8ee0d5d3
 
-COCOAPODS: 0.25.0
+COCOAPODS: 0.34.4

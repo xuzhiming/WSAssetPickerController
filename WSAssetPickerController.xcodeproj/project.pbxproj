@@ -21,8 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */; };
-		0D8AE762D8B74582B9AD2ECF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8C127AA6E74EA5B04B6C1D /* libPods.a */; };
+		04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04876A081A319AC900350563 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04876A071A319AC900350563 /* libPods.a */; };
 		4AE5CCE8156AB810004C2AB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */; };
 		DE017CF9155EC92F002E7BB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CF8155EC92F002E7BB0 /* UIKit.framework */; };
 		DE017CFB155EC92F002E7BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CFA155EC92F002E7BB0 /* Foundation.framework */; };
@@ -66,8 +66,11 @@
 
 /* Begin PBXFileReference section */
 		04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetPickGroupDelegate.h; sourceTree = "<group>"; };
+		04876A071A319AC900350563 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		2DC068E37F81F9C12B440946 /* libPods-Picker Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picker Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8F346C66E3694462A33E62E2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DE017CF4155EC92F002E7BB0 /* Picker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE017CF8155EC92F002E7BB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE017CFA155EC92F002E7BB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,13 +120,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04876A081A319AC900350563 /* libPods.a in Frameworks */,
 				DEEC102A156B39AB00B1F0D2 /* libWSAssetPicker.a in Frameworks */,
 				4AE5CCE8156AB810004C2AB7 /* QuartzCore.framework in Frameworks */,
 				DE7FF814155ECB0A00D7B3E8 /* AssetsLibrary.framework in Frameworks */,
 				DE017CF9155EC92F002E7BB0 /* UIKit.framework in Frameworks */,
 				DE017CFB155EC92F002E7BB0 /* Foundation.framework in Frameworks */,
 				DE017CFD155EC92F002E7BB0 /* CoreGraphics.framework in Frameworks */,
-				0D8AE762D8B74582B9AD2ECF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C98988BA18F86F735445A731 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */,
+				B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE017CE9155EC92F002E7BB0 = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +159,7 @@
 				DEC2AE0215C5D6270078B2C7 /* demo */,
 				DE017CF7155EC92F002E7BB0 /* Frameworks */,
 				DE017CF5155EC92F002E7BB0 /* Products */,
-				8F346C66E3694462A33E62E2 /* Pods.xcconfig */,
+				C98988BA18F86F735445A731 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +175,7 @@
 		DE017CF7155EC92F002E7BB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04876A071A319AC900350563 /* libPods.a */,
 				4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */,
 				DE7FF813155ECB0A00D7B3E8 /* AssetsLibrary.framework */,
 				DE017CF8155EC92F002E7BB0 /* UIKit.framework */,
@@ -170,6 +183,7 @@
 				DE017CFC155EC92F002E7BB0 /* CoreGraphics.framework */,
 				DE017D10155EC930002E7BB0 /* SenTestingKit.framework */,
 				DF8C127AA6E74EA5B04B6C1D /* libPods.a */,
+				2DC068E37F81F9C12B440946 /* libPods-Picker Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,10 +262,10 @@
 			files = (
 				DEC2ADF515C5D5D60078B2C7 /* WSAssetPicker.h in Headers */,
 				DEC2ADF615C5D5D60078B2C7 /* WSAssetPickerController.h in Headers */,
+				04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */,
 				DEC2ADF215C5D5D60078B2C7 /* WSAlbumTableViewController.h in Headers */,
 				DEC2ADF815C5D5D60078B2C7 /* WSAssetPickerState.h in Headers */,
 				DEC2ADFA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h in Headers */,
-				04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */,
 				DEC2ADFC15C5D5D60078B2C7 /* WSAssetTableViewController.h in Headers */,
 				DEC2ADFE15C5D5D60078B2C7 /* WSAssetViewColumn.h in Headers */,
 				DEC2AE0015C5D5D60078B2C7 /* WSAssetWrapper.h in Headers */,
@@ -375,7 +389,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picker Demo/Pods-Picker Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		DEC0BC5B164F3FFC0078003F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -497,11 +512,15 @@
 		};
 		DE017D22155EC930002E7BB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F346C66E3694462A33E62E2 /* Pods.xcconfig */;
+			baseConfigurationReference = 6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/WSAssetPickerController-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/demo/WSAssetPickerController-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -510,11 +529,15 @@
 		};
 		DE017D23155EC930002E7BB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F346C66E3694462A33E62E2 /* Pods.xcconfig */;
+			baseConfigurationReference = B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/WSAssetPickerController-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/demo/WSAssetPickerController-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
