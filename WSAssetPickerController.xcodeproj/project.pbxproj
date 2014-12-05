@@ -1,637 +1,1734 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>04876A051A31921900350563</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPickGroupDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04876A061A31921900350563</key>
+		<dict>
+			<key>fileRef</key>
+			<string>04876A051A31921900350563</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>04876A071A319AC900350563</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>Pods/build/Debug-iphoneos/libPods.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04876A081A319AC900350563</key>
+		<dict>
+			<key>fileRef</key>
+			<string>04876A071A319AC900350563</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2DC068E37F81F9C12B440946</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Picker Demo.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4AE5CCE7156AB810004C2AB7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>4AE5CCE8156AB810004C2AB7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AE5CCE7156AB810004C2AB7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6766F131D96DE25B19B5F6D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>862712CA7B4249E2B9782464</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+		</dict>
+		<key>A85B7853C35840A09505658E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Picker Demo/Pods-Picker Demo-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B12CA5892572DDC29D4A69FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C98988BA18F86F735445A731</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6766F131D96DE25B19B5F6D2</string>
+				<string>B12CA5892572DDC29D4A69FA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAB1919A73B1CD4E0672C406</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2DC068E37F81F9C12B440946</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE017CE9155EC92F002E7BB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEC2ADE115C5D5D60078B2C7</string>
+				<string>DEC2AE0215C5D6270078B2C7</string>
+				<string>DE017CF7155EC92F002E7BB0</string>
+				<string>DE017CF5155EC92F002E7BB0</string>
+				<string>C98988BA18F86F735445A731</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE017CEB155EC92F002E7BB0</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>WS</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Wesley D. Smith</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>DE017CEE155EC92F002E7BB0</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>DE017CE9155EC92F002E7BB0</string>
+			<key>productRefGroup</key>
+			<string>DE017CF5155EC92F002E7BB0</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>DE017CF3155EC92F002E7BB0</string>
+				<string>DEEC0FF1156B32B600B1F0D2</string>
+				<string>DEC0BC57164F3FF80078003F</string>
+			</array>
+		</dict>
+		<key>DE017CEE155EC92F002E7BB0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DE017D1F155EC930002E7BB0</string>
+				<string>DE017D20155EC930002E7BB0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DE017CF0155EC92F002E7BB0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEC2AE1015C5D6270078B2C7</string>
+				<string>DEC2AE1215C5D6270078B2C7</string>
+				<string>DEC2AE1615C5D6270078B2C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DE017CF1155EC92F002E7BB0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>04876A081A319AC900350563</string>
+				<string>DEEC102A156B39AB00B1F0D2</string>
+				<string>4AE5CCE8156AB810004C2AB7</string>
+				<string>DE7FF814155ECB0A00D7B3E8</string>
+				<string>DE017CF9155EC92F002E7BB0</string>
+				<string>DE017CFB155EC92F002E7BB0</string>
+				<string>DE017CFD155EC92F002E7BB0</string>
+				<string>DAB1919A73B1CD4E0672C406</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DE017CF2155EC92F002E7BB0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEEC102B156B39AF00B1F0D2</string>
+				<string>DEC2AE1115C5D6270078B2C7</string>
+				<string>DEC2AE1415C5D6270078B2C7</string>
+				<string>DEC2AE1515C5D6270078B2C7</string>
+				<string>DEBD0F1E15C5DDE600B9C9B5</string>
+				<string>DEBD0F1F15C5DDE600B9C9B5</string>
+				<string>DE0C6ECD1659592D00ED8496</string>
+				<string>DEDF87571753077200D9A9A4</string>
+				<string>DEDF87581753077200D9A9A4</string>
+				<string>DEDF87591753077200D9A9A4</string>
+				<string>DEDF875A1753077200D9A9A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DE017CF3155EC92F002E7BB0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DE017D21155EC930002E7BB0</string>
+			<key>buildPhases</key>
+			<array>
+				<string>862712CA7B4249E2B9782464</string>
+				<string>DE017CF0155EC92F002E7BB0</string>
+				<string>DE017CF1155EC92F002E7BB0</string>
+				<string>DE017CF2155EC92F002E7BB0</string>
+				<string>A85B7853C35840A09505658E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Picker Demo</string>
+			<key>productName</key>
+			<string>WSAssetPickerController</string>
+			<key>productReference</key>
+			<string>DE017CF4155EC92F002E7BB0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>DE017CF4155EC92F002E7BB0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Picker Demo.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DE017CF5155EC92F002E7BB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DE017CF4155EC92F002E7BB0</string>
+				<string>DEEC0FF2156B32B600B1F0D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE017CF7155EC92F002E7BB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>04876A071A319AC900350563</string>
+				<string>4AE5CCE7156AB810004C2AB7</string>
+				<string>DE7FF813155ECB0A00D7B3E8</string>
+				<string>DE017CF8155EC92F002E7BB0</string>
+				<string>DE017CFA155EC92F002E7BB0</string>
+				<string>DE017CFC155EC92F002E7BB0</string>
+				<string>DE017D10155EC930002E7BB0</string>
+				<string>DF8C127AA6E74EA5B04B6C1D</string>
+				<string>2DC068E37F81F9C12B440946</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE017CF8155EC92F002E7BB0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DE017CF9155EC92F002E7BB0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE017CF8155EC92F002E7BB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE017CFA155EC92F002E7BB0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DE017CFB155EC92F002E7BB0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE017CFA155EC92F002E7BB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE017CFC155EC92F002E7BB0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DE017CFD155EC92F002E7BB0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE017CFC155EC92F002E7BB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE017D10155EC930002E7BB0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>DE017D1F155EC930002E7BB0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DE017D20155EC930002E7BB0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DE017D21155EC930002E7BB0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DE017D22155EC930002E7BB0</string>
+				<string>DE017D23155EC930002E7BB0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DE017D22155EC930002E7BB0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6766F131D96DE25B19B5F6D2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>demo/WSAssetPickerController-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/demo/WSAssetPickerController-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Pods/build/Debug-iphoneos</string>
+				</array>
+				<key>OTHER_CFLAGS</key>
+				<string>-DDEBUG</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DE017D23155EC930002E7BB0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B12CA5892572DDC29D4A69FA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>demo/WSAssetPickerController-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>$(SRCROOT)/demo/WSAssetPickerController-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Pods/build/Debug-iphoneos</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DE0C6ECC1659592D00ED8496</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Default-568h@2x.png</string>
+			<key>path</key>
+			<string>../Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE0C6ECD1659592D00ED8496</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE0C6ECC1659592D00ED8496</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE7FF813155ECB0A00D7B3E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AssetsLibrary.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AssetsLibrary.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DE7FF814155ECB0A00D7B3E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE7FF813155ECB0A00D7B3E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE960F5515C5F84C00BB5E0B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPicker-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE960F5615C5F84C00BB5E0B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE960F5515C5F84C00BB5E0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEBD0F1C15C5DDE600B9C9B5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEBD0F1D15C5DDE600B9C9B5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEBD0F1E15C5DDE600B9C9B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEBD0F1C15C5DDE600B9C9B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEBD0F1F15C5DDE600B9C9B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEBD0F1D15C5DDE600B9C9B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC0BC57164F3FF80078003F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DEC0BC58164F3FF80078003F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DEC0BC5B164F3FFC0078003F</string>
+			</array>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXAggregateTarget</string>
+			<key>name</key>
+			<string>WSAssetPickerCombined</string>
+			<key>productName</key>
+			<string>WSAssetPickerCombined</string>
+		</dict>
+		<key>DEC0BC58164F3FF80078003F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DEC0BC59164F3FF80078003F</string>
+				<string>DEC0BC5A164F3FF80078003F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DEC0BC59164F3FF80078003F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DEC0BC5A164F3FF80078003F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DEC0BC5B164F3FFC0078003F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>XCODEBUILD_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin
+XCODEBUILD=$XCODEBUILD_PATH/xcodebuild
 
-/* Begin PBXAggregateTarget section */
-		DEC0BC57164F3FF80078003F /* WSAssetPickerCombined */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DEC0BC58164F3FF80078003F /* Build configuration list for PBXAggregateTarget "WSAssetPickerCombined" */;
-			buildPhases = (
-				DEC0BC5B164F3FFC0078003F /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = WSAssetPickerCombined;
-			productName = WSAssetPickerCombined;
-		};
-/* End PBXAggregateTarget section */
+$XCODEBUILD -project WSAssetPickerController.xcodeproj -target "WSAssetPicker" -sdk "iphonesimulator" -configuration "Release" clean build
+$XCODEBUILD -project WSAssetPickerController.xcodeproj -target "WSAssetPicker" -sdk "iphoneos" -configuration "Release" clean build
 
-/* Begin PBXBuildFile section */
-		04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04876A081A319AC900350563 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04876A071A319AC900350563 /* libPods.a */; };
-		4AE5CCE8156AB810004C2AB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */; };
-		DE017CF9155EC92F002E7BB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CF8155EC92F002E7BB0 /* UIKit.framework */; };
-		DE017CFB155EC92F002E7BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CFA155EC92F002E7BB0 /* Foundation.framework */; };
-		DE017CFD155EC92F002E7BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CFC155EC92F002E7BB0 /* CoreGraphics.framework */; };
-		DE0C6ECD1659592D00ED8496 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0C6ECC1659592D00ED8496 /* Default-568h@2x.png */; };
-		DE7FF814155ECB0A00D7B3E8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7FF813155ECB0A00D7B3E8 /* AssetsLibrary.framework */; };
-		DE960F5615C5F84C00BB5E0B /* WSAssetPicker-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DE960F5515C5F84C00BB5E0B /* WSAssetPicker-Prefix.pch */; };
-		DEBD0F1E15C5DDE600B9C9B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBD0F1C15C5DDE600B9C9B5 /* Icon.png */; };
-		DEBD0F1F15C5DDE600B9C9B5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEBD0F1D15C5DDE600B9C9B5 /* Icon@2x.png */; };
-		DEC2ADF215C5D5D60078B2C7 /* WSAlbumTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADE215C5D5D60078B2C7 /* WSAlbumTableViewController.h */; };
-		DEC2ADF315C5D5D60078B2C7 /* WSAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADE315C5D5D60078B2C7 /* WSAlbumTableViewController.m */; };
-		DEC2ADF515C5D5D60078B2C7 /* WSAssetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADE515C5D5D60078B2C7 /* WSAssetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEC2ADF615C5D5D60078B2C7 /* WSAssetPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADE615C5D5D60078B2C7 /* WSAssetPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEC2ADF715C5D5D60078B2C7 /* WSAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADE715C5D5D60078B2C7 /* WSAssetPickerController.m */; };
-		DEC2ADF815C5D5D60078B2C7 /* WSAssetPickerState.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADE815C5D5D60078B2C7 /* WSAssetPickerState.h */; };
-		DEC2ADF915C5D5D60078B2C7 /* WSAssetPickerState.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADE915C5D5D60078B2C7 /* WSAssetPickerState.m */; };
-		DEC2ADFA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADEA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h */; };
-		DEC2ADFB15C5D5D60078B2C7 /* WSAssetsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADEB15C5D5D60078B2C7 /* WSAssetsTableViewCell.m */; };
-		DEC2ADFC15C5D5D60078B2C7 /* WSAssetTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADEC15C5D5D60078B2C7 /* WSAssetTableViewController.h */; };
-		DEC2ADFD15C5D5D60078B2C7 /* WSAssetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADED15C5D5D60078B2C7 /* WSAssetTableViewController.m */; };
-		DEC2ADFE15C5D5D60078B2C7 /* WSAssetViewColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADEE15C5D5D60078B2C7 /* WSAssetViewColumn.h */; };
-		DEC2ADFF15C5D5D60078B2C7 /* WSAssetViewColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADEF15C5D5D60078B2C7 /* WSAssetViewColumn.m */; };
-		DEC2AE0015C5D5D60078B2C7 /* WSAssetWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2ADF015C5D5D60078B2C7 /* WSAssetWrapper.h */; };
-		DEC2AE0115C5D5D60078B2C7 /* WSAssetWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2ADF115C5D5D60078B2C7 /* WSAssetWrapper.m */; };
-		DEC2AE1015C5D6270078B2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2AE0515C5D6270078B2C7 /* main.m */; };
-		DEC2AE1115C5D6270078B2C7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC2AE0615C5D6270078B2C7 /* MainStoryboard_iPhone.storyboard */; };
-		DEC2AE1215C5D6270078B2C7 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2AE0815C5D6270078B2C7 /* WSAppDelegate.m */; };
-		DEC2AE1415C5D6270078B2C7 /* WSAssetViewSelectionIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC2AE0B15C5D6270078B2C7 /* WSAssetViewSelectionIndicator.png */; };
-		DEC2AE1515C5D6270078B2C7 /* WSAssetViewSelectionIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC2AE0C15C5D6270078B2C7 /* WSAssetViewSelectionIndicator@2x.png */; };
-		DEC2AE1615C5D6270078B2C7 /* WSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2AE0E15C5D6270078B2C7 /* WSMainViewController.m */; };
-		DEDF87571753077200D9A9A4 /* WSButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDF87531753077200D9A9A4 /* WSButtonBackground.png */; };
-		DEDF87581753077200D9A9A4 /* WSButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDF87541753077200D9A9A4 /* WSButtonBackground@2x.png */; };
-		DEDF87591753077200D9A9A4 /* WSButtonBackgroundPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDF87551753077200D9A9A4 /* WSButtonBackgroundPressed.png */; };
-		DEDF875A1753077200D9A9A4 /* WSButtonBackgroundPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDF87561753077200D9A9A4 /* WSButtonBackgroundPressed@2x.png */; };
-		DEEC0FF3156B32B600B1F0D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CFA155EC92F002E7BB0 /* Foundation.framework */; };
-		DEEC1017156B332900B1F0D2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7FF813155ECB0A00D7B3E8 /* AssetsLibrary.framework */; };
-		DEEC1018156B333600B1F0D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE017CF8155EC92F002E7BB0 /* UIKit.framework */; };
-		DEEC102A156B39AB00B1F0D2 /* libWSAssetPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEC0FF2156B32B600B1F0D2 /* libWSAssetPicker.a */; };
-		DEEC102B156B39AF00B1F0D2 /* libWSAssetPicker.a in Resources */ = {isa = PBXBuildFile; fileRef = DEEC0FF2156B32B600B1F0D2 /* libWSAssetPicker.a */; };
-/* End PBXBuildFile section */
+mkdir -p "build/WSAssetPicker/headers"
 
-/* Begin PBXFileReference section */
-		04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetPickGroupDelegate.h; sourceTree = "<group>"; };
-		04876A071A319AC900350563 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
-		2DC068E37F81F9C12B440946 /* libPods-Picker Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picker Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		DE017CF4155EC92F002E7BB0 /* Picker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE017CF8155EC92F002E7BB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DE017CFA155EC92F002E7BB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DE017CFC155EC92F002E7BB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DE017D10155EC930002E7BB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DE0C6ECC1659592D00ED8496 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		DE7FF813155ECB0A00D7B3E8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		DE960F5515C5F84C00BB5E0B /* WSAssetPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WSAssetPicker-Prefix.pch"; sourceTree = "<group>"; };
-		DEBD0F1C15C5DDE600B9C9B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		DEBD0F1D15C5DDE600B9C9B5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		DEC2ADE215C5D5D60078B2C7 /* WSAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAlbumTableViewController.h; sourceTree = "<group>"; };
-		DEC2ADE315C5D5D60078B2C7 /* WSAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAlbumTableViewController.m; sourceTree = "<group>"; };
-		DEC2ADE515C5D5D60078B2C7 /* WSAssetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetPicker.h; sourceTree = "<group>"; };
-		DEC2ADE615C5D5D60078B2C7 /* WSAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetPickerController.h; sourceTree = "<group>"; };
-		DEC2ADE715C5D5D60078B2C7 /* WSAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetPickerController.m; sourceTree = "<group>"; };
-		DEC2ADE815C5D5D60078B2C7 /* WSAssetPickerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetPickerState.h; sourceTree = "<group>"; };
-		DEC2ADE915C5D5D60078B2C7 /* WSAssetPickerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetPickerState.m; sourceTree = "<group>"; };
-		DEC2ADEA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetsTableViewCell.h; sourceTree = "<group>"; };
-		DEC2ADEB15C5D5D60078B2C7 /* WSAssetsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetsTableViewCell.m; sourceTree = "<group>"; };
-		DEC2ADEC15C5D5D60078B2C7 /* WSAssetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetTableViewController.h; sourceTree = "<group>"; };
-		DEC2ADED15C5D5D60078B2C7 /* WSAssetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetTableViewController.m; sourceTree = "<group>"; };
-		DEC2ADEE15C5D5D60078B2C7 /* WSAssetViewColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetViewColumn.h; sourceTree = "<group>"; };
-		DEC2ADEF15C5D5D60078B2C7 /* WSAssetViewColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetViewColumn.m; sourceTree = "<group>"; };
-		DEC2ADF015C5D5D60078B2C7 /* WSAssetWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAssetWrapper.h; sourceTree = "<group>"; };
-		DEC2ADF115C5D5D60078B2C7 /* WSAssetWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAssetWrapper.m; sourceTree = "<group>"; };
-		DEC2AE0415C5D6270078B2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DEC2AE0515C5D6270078B2C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DEC2AE0615C5D6270078B2C7 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		DEC2AE0715C5D6270078B2C7 /* WSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
-		DEC2AE0815C5D6270078B2C7 /* WSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
-		DEC2AE0915C5D6270078B2C7 /* WSAssetPickerController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WSAssetPickerController-Info.plist"; sourceTree = "<group>"; };
-		DEC2AE0A15C5D6270078B2C7 /* WSAssetPickerController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WSAssetPickerController-Prefix.pch"; sourceTree = "<group>"; };
-		DEC2AE0B15C5D6270078B2C7 /* WSAssetViewSelectionIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSAssetViewSelectionIndicator.png; sourceTree = "<group>"; };
-		DEC2AE0C15C5D6270078B2C7 /* WSAssetViewSelectionIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WSAssetViewSelectionIndicator@2x.png"; sourceTree = "<group>"; };
-		DEC2AE0D15C5D6270078B2C7 /* WSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMainViewController.h; sourceTree = "<group>"; };
-		DEC2AE0E15C5D6270078B2C7 /* WSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMainViewController.m; sourceTree = "<group>"; };
-		DEDF87531753077200D9A9A4 /* WSButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSButtonBackground.png; sourceTree = "<group>"; };
-		DEDF87541753077200D9A9A4 /* WSButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WSButtonBackground@2x.png"; sourceTree = "<group>"; };
-		DEDF87551753077200D9A9A4 /* WSButtonBackgroundPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSButtonBackgroundPressed.png; sourceTree = "<group>"; };
-		DEDF87561753077200D9A9A4 /* WSButtonBackgroundPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WSButtonBackgroundPressed@2x.png"; sourceTree = "<group>"; };
-		DEEC0FF2156B32B600B1F0D2 /* libWSAssetPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWSAssetPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF8C127AA6E74EA5B04B6C1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		DE017CF1155EC92F002E7BB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04876A081A319AC900350563 /* libPods.a in Frameworks */,
-				DEEC102A156B39AB00B1F0D2 /* libWSAssetPicker.a in Frameworks */,
-				4AE5CCE8156AB810004C2AB7 /* QuartzCore.framework in Frameworks */,
-				DE7FF814155ECB0A00D7B3E8 /* AssetsLibrary.framework in Frameworks */,
-				DE017CF9155EC92F002E7BB0 /* UIKit.framework in Frameworks */,
-				DE017CFB155EC92F002E7BB0 /* Foundation.framework in Frameworks */,
-				DE017CFD155EC92F002E7BB0 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEEC0FEF156B32B600B1F0D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEEC1018156B333600B1F0D2 /* UIKit.framework in Frameworks */,
-				DEEC1017156B332900B1F0D2 /* AssetsLibrary.framework in Frameworks */,
-				DEEC0FF3156B32B600B1F0D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C98988BA18F86F735445A731 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */,
-				B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DE017CE9155EC92F002E7BB0 = {
-			isa = PBXGroup;
-			children = (
-				DEC2ADE115C5D5D60078B2C7 /* src */,
-				DEC2AE0215C5D6270078B2C7 /* demo */,
-				DE017CF7155EC92F002E7BB0 /* Frameworks */,
-				DE017CF5155EC92F002E7BB0 /* Products */,
-				C98988BA18F86F735445A731 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		DE017CF5155EC92F002E7BB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DE017CF4155EC92F002E7BB0 /* Picker Demo.app */,
-				DEEC0FF2156B32B600B1F0D2 /* libWSAssetPicker.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DE017CF7155EC92F002E7BB0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04876A071A319AC900350563 /* libPods.a */,
-				4AE5CCE7156AB810004C2AB7 /* QuartzCore.framework */,
-				DE7FF813155ECB0A00D7B3E8 /* AssetsLibrary.framework */,
-				DE017CF8155EC92F002E7BB0 /* UIKit.framework */,
-				DE017CFA155EC92F002E7BB0 /* Foundation.framework */,
-				DE017CFC155EC92F002E7BB0 /* CoreGraphics.framework */,
-				DE017D10155EC930002E7BB0 /* SenTestingKit.framework */,
-				DF8C127AA6E74EA5B04B6C1D /* libPods.a */,
-				2DC068E37F81F9C12B440946 /* libPods-Picker Demo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DEC2ADE115C5D5D60078B2C7 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				DEC2ADE515C5D5D60078B2C7 /* WSAssetPicker.h */,
-				DEC2ADE215C5D5D60078B2C7 /* WSAlbumTableViewController.h */,
-				DEC2ADE315C5D5D60078B2C7 /* WSAlbumTableViewController.m */,
-				DEC2ADE615C5D5D60078B2C7 /* WSAssetPickerController.h */,
-				DEC2ADE715C5D5D60078B2C7 /* WSAssetPickerController.m */,
-				DEC2ADE815C5D5D60078B2C7 /* WSAssetPickerState.h */,
-				DEC2ADE915C5D5D60078B2C7 /* WSAssetPickerState.m */,
-				DEC2ADEA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h */,
-				DEC2ADEB15C5D5D60078B2C7 /* WSAssetsTableViewCell.m */,
-				DEC2ADEC15C5D5D60078B2C7 /* WSAssetTableViewController.h */,
-				DEC2ADED15C5D5D60078B2C7 /* WSAssetTableViewController.m */,
-				DEC2ADEE15C5D5D60078B2C7 /* WSAssetViewColumn.h */,
-				DEC2ADEF15C5D5D60078B2C7 /* WSAssetViewColumn.m */,
-				DEC2ADF015C5D5D60078B2C7 /* WSAssetWrapper.h */,
-				DEC2ADF115C5D5D60078B2C7 /* WSAssetWrapper.m */,
-				DEC2AE1815C5D7820078B2C7 /* Supporting Files */,
-				04876A051A31921900350563 /* WSAssetPickGroupDelegate.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		DEC2AE0215C5D6270078B2C7 /* demo */ = {
-			isa = PBXGroup;
-			children = (
-				DEC2AE0615C5D6270078B2C7 /* MainStoryboard_iPhone.storyboard */,
-				DEC2AE0B15C5D6270078B2C7 /* WSAssetViewSelectionIndicator.png */,
-				DEC2AE0C15C5D6270078B2C7 /* WSAssetViewSelectionIndicator@2x.png */,
-				DEC2AE0D15C5D6270078B2C7 /* WSMainViewController.h */,
-				DEC2AE0E15C5D6270078B2C7 /* WSMainViewController.m */,
-				DEC2AE1715C5D6320078B2C7 /* Supporting Files */,
-			);
-			path = demo;
-			sourceTree = "<group>";
-		};
-		DEC2AE1715C5D6320078B2C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DEDF87531753077200D9A9A4 /* WSButtonBackground.png */,
-				DEDF87541753077200D9A9A4 /* WSButtonBackground@2x.png */,
-				DEDF87551753077200D9A9A4 /* WSButtonBackgroundPressed.png */,
-				DEDF87561753077200D9A9A4 /* WSButtonBackgroundPressed@2x.png */,
-				DE0C6ECC1659592D00ED8496 /* Default-568h@2x.png */,
-				DEBD0F1C15C5DDE600B9C9B5 /* Icon.png */,
-				DEBD0F1D15C5DDE600B9C9B5 /* Icon@2x.png */,
-				DEC2AE0515C5D6270078B2C7 /* main.m */,
-				DEC2AE0315C5D6270078B2C7 /* InfoPlist.strings */,
-				DEC2AE0915C5D6270078B2C7 /* WSAssetPickerController-Info.plist */,
-				DEC2AE0715C5D6270078B2C7 /* WSAppDelegate.h */,
-				DEC2AE0815C5D6270078B2C7 /* WSAppDelegate.m */,
-				DEC2AE0A15C5D6270078B2C7 /* WSAssetPickerController-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DEC2AE1815C5D7820078B2C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE960F5515C5F84C00BB5E0B /* WSAssetPicker-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		DEEC0FF0156B32B600B1F0D2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC2ADF515C5D5D60078B2C7 /* WSAssetPicker.h in Headers */,
-				DEC2ADF615C5D5D60078B2C7 /* WSAssetPickerController.h in Headers */,
-				04876A061A31921900350563 /* WSAssetPickGroupDelegate.h in Headers */,
-				DEC2ADF215C5D5D60078B2C7 /* WSAlbumTableViewController.h in Headers */,
-				DEC2ADF815C5D5D60078B2C7 /* WSAssetPickerState.h in Headers */,
-				DEC2ADFA15C5D5D60078B2C7 /* WSAssetsTableViewCell.h in Headers */,
-				DEC2ADFC15C5D5D60078B2C7 /* WSAssetTableViewController.h in Headers */,
-				DEC2ADFE15C5D5D60078B2C7 /* WSAssetViewColumn.h in Headers */,
-				DEC2AE0015C5D5D60078B2C7 /* WSAssetWrapper.h in Headers */,
-				DE960F5615C5F84C00BB5E0B /* WSAssetPicker-Prefix.pch in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		DE017CF3155EC92F002E7BB0 /* Picker Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE017D21155EC930002E7BB0 /* Build configuration list for PBXNativeTarget "Picker Demo" */;
-			buildPhases = (
-				862712CA7B4249E2B9782464 /* Check Pods Manifest.lock */,
-				DE017CF0155EC92F002E7BB0 /* Sources */,
-				DE017CF1155EC92F002E7BB0 /* Frameworks */,
-				DE017CF2155EC92F002E7BB0 /* Resources */,
-				A85B7853C35840A09505658E /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Picker Demo";
-			productName = WSAssetPickerController;
-			productReference = DE017CF4155EC92F002E7BB0 /* Picker Demo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DEEC0FF1156B32B600B1F0D2 /* WSAssetPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEEC1013156B32B600B1F0D2 /* Build configuration list for PBXNativeTarget "WSAssetPicker" */;
-			buildPhases = (
-				DEEC0FEE156B32B600B1F0D2 /* Sources */,
-				DEEC0FEF156B32B600B1F0D2 /* Frameworks */,
-				DEEC0FF0156B32B600B1F0D2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WSAssetPicker;
-			productName = WSAssetPicker;
-			productReference = DEEC0FF2156B32B600B1F0D2 /* libWSAssetPicker.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		DE017CEB155EC92F002E7BB0 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = WS;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Wesley D. Smith";
-			};
-			buildConfigurationList = DE017CEE155EC92F002E7BB0 /* Build configuration list for PBXProject "WSAssetPickerController" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = DE017CE9155EC92F002E7BB0;
-			productRefGroup = DE017CF5155EC92F002E7BB0 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DE017CF3155EC92F002E7BB0 /* Picker Demo */,
-				DEEC0FF1156B32B600B1F0D2 /* WSAssetPicker */,
-				DEC0BC57164F3FF80078003F /* WSAssetPickerCombined */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		DE017CF2155EC92F002E7BB0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEEC102B156B39AF00B1F0D2 /* libWSAssetPicker.a in Resources */,
-				DEC2AE1115C5D6270078B2C7 /* MainStoryboard_iPhone.storyboard in Resources */,
-				DEC2AE1415C5D6270078B2C7 /* WSAssetViewSelectionIndicator.png in Resources */,
-				DEC2AE1515C5D6270078B2C7 /* WSAssetViewSelectionIndicator@2x.png in Resources */,
-				DEBD0F1E15C5DDE600B9C9B5 /* Icon.png in Resources */,
-				DEBD0F1F15C5DDE600B9C9B5 /* Icon@2x.png in Resources */,
-				DE0C6ECD1659592D00ED8496 /* Default-568h@2x.png in Resources */,
-				DEDF87571753077200D9A9A4 /* WSButtonBackground.png in Resources */,
-				DEDF87581753077200D9A9A4 /* WSButtonBackground@2x.png in Resources */,
-				DEDF87591753077200D9A9A4 /* WSButtonBackgroundPressed.png in Resources */,
-				DEDF875A1753077200D9A9A4 /* WSButtonBackgroundPressed@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		862712CA7B4249E2B9782464 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
-		A85B7853C35840A09505658E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picker Demo/Pods-Picker Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEC0BC5B164F3FFC0078003F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "XCODEBUILD_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin\nXCODEBUILD=$XCODEBUILD_PATH/xcodebuild\n\n$XCODEBUILD -project WSAssetPickerController.xcodeproj -target \"WSAssetPicker\" -sdk \"iphonesimulator\" -configuration \"Release\" clean build\n$XCODEBUILD -project WSAssetPickerController.xcodeproj -target \"WSAssetPicker\" -sdk \"iphoneos\" -configuration \"Release\" clean build\n\nmkdir -p \"build/WSAssetPicker/headers\"\n\nlipo -create -output \"build/WSAssetPicker/libWSAssetPicker-Combined.a\" \"build/Release-iphoneos/libWSAssetPicker.a\" \"build/Release-iphonesimulator/libWSAssetPicker.a\"\ncp -r  \"build/Release-iphoneos/include/WSAssetPicker/\" \"build/WSAssetPicker/headers\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DE017CF0155EC92F002E7BB0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC2AE1015C5D6270078B2C7 /* main.m in Sources */,
-				DEC2AE1215C5D6270078B2C7 /* WSAppDelegate.m in Sources */,
-				DEC2AE1615C5D6270078B2C7 /* WSMainViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEEC0FEE156B32B600B1F0D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC2ADF315C5D5D60078B2C7 /* WSAlbumTableViewController.m in Sources */,
-				DEC2ADF715C5D5D60078B2C7 /* WSAssetPickerController.m in Sources */,
-				DEC2ADF915C5D5D60078B2C7 /* WSAssetPickerState.m in Sources */,
-				DEC2ADFB15C5D5D60078B2C7 /* WSAssetsTableViewCell.m in Sources */,
-				DEC2ADFD15C5D5D60078B2C7 /* WSAssetTableViewController.m in Sources */,
-				DEC2ADFF15C5D5D60078B2C7 /* WSAssetViewColumn.m in Sources */,
-				DEC2AE0115C5D5D60078B2C7 /* WSAssetWrapper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DEC2AE0315C5D6270078B2C7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEC2AE0415C5D6270078B2C7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		DE017D1F155EC930002E7BB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DE017D20155EC930002E7BB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DE017D22155EC930002E7BB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6766F131D96DE25B19B5F6D2 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "demo/WSAssetPickerController-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/demo/WSAssetPickerController-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
-				OTHER_CFLAGS = "-DDEBUG";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		DE017D23155EC930002E7BB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B12CA5892572DDC29D4A69FA /* Pods.release.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "demo/WSAssetPickerController-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/demo/WSAssetPickerController-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		DEC0BC59164F3FF80078003F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		DEC0BC5A164F3FF80078003F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DEEC100F156B32B600B1F0D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/WSAssetPicker.dst;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "src/WSAssetPicker-Prefix.pch";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = "non-global";
-			};
-			name = Debug;
-		};
-		DEEC1010156B32B600B1F0D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/WSAssetPicker.dst;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "src/WSAssetPicker-Prefix.pch";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = "non-global";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		DE017CEE155EC92F002E7BB0 /* Build configuration list for PBXProject "WSAssetPickerController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE017D1F155EC930002E7BB0 /* Debug */,
-				DE017D20155EC930002E7BB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DE017D21155EC930002E7BB0 /* Build configuration list for PBXNativeTarget "Picker Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE017D22155EC930002E7BB0 /* Debug */,
-				DE017D23155EC930002E7BB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEC0BC58164F3FF80078003F /* Build configuration list for PBXAggregateTarget "WSAssetPickerCombined" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEC0BC59164F3FF80078003F /* Debug */,
-				DEC0BC5A164F3FF80078003F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEEC1013156B32B600B1F0D2 /* Build configuration list for PBXNativeTarget "WSAssetPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEEC100F156B32B600B1F0D2 /* Debug */,
-				DEEC1010156B32B600B1F0D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = DE017CEB155EC92F002E7BB0 /* Project object */;
-}
+lipo -create -output "build/WSAssetPicker/libWSAssetPicker-Combined.a" "build/Release-iphoneos/libWSAssetPicker.a" "build/Release-iphonesimulator/libWSAssetPicker.a"
+cp -r  "build/Release-iphoneos/include/WSAssetPicker/" "build/WSAssetPicker/headers"</string>
+		</dict>
+		<key>DEC2ADE115C5D5D60078B2C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEC2ADE515C5D5D60078B2C7</string>
+				<string>DEC2ADE215C5D5D60078B2C7</string>
+				<string>DEC2ADE315C5D5D60078B2C7</string>
+				<string>DEC2ADE615C5D5D60078B2C7</string>
+				<string>DEC2ADE715C5D5D60078B2C7</string>
+				<string>DEC2ADE815C5D5D60078B2C7</string>
+				<string>DEC2ADE915C5D5D60078B2C7</string>
+				<string>DEC2ADEA15C5D5D60078B2C7</string>
+				<string>DEC2ADEB15C5D5D60078B2C7</string>
+				<string>DEC2ADEC15C5D5D60078B2C7</string>
+				<string>DEC2ADED15C5D5D60078B2C7</string>
+				<string>DEC2ADEE15C5D5D60078B2C7</string>
+				<string>DEC2ADEF15C5D5D60078B2C7</string>
+				<string>DEC2ADF015C5D5D60078B2C7</string>
+				<string>DEC2ADF115C5D5D60078B2C7</string>
+				<string>DEC2AE1815C5D7820078B2C7</string>
+				<string>04876A051A31921900350563</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>src</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE215C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAlbumTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE315C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAlbumTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE515C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPicker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE615C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPickerController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE715C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetPickerController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE815C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPickerState.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADE915C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetPickerState.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADEA15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetsTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADEB15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetsTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADEC15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADED15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADEE15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetViewColumn.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADEF15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetViewColumn.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADF015C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetWrapper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADF115C5D5D60078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAssetWrapper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2ADF215C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE215C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADF315C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE315C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADF515C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE515C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DEC2ADF615C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE615C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DEC2ADF715C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE715C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADF815C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE815C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADF915C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADE915C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFA15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADEA15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFB15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADEB15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFC15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADEC15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFD15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADED15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFE15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADEE15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2ADFF15C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADEF15C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE0015C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADF015C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE0115C5D5D60078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2ADF115C5D5D60078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE0215C5D6270078B2C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEC2AE0615C5D6270078B2C7</string>
+				<string>DEC2AE0B15C5D6270078B2C7</string>
+				<string>DEC2AE0C15C5D6270078B2C7</string>
+				<string>DEC2AE0D15C5D6270078B2C7</string>
+				<string>DEC2AE0E15C5D6270078B2C7</string>
+				<string>DEC2AE1715C5D6320078B2C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>demo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0315C5D6270078B2C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEC2AE0415C5D6270078B2C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0415C5D6270078B2C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0515C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0615C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0715C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0815C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0915C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>WSAssetPickerController-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0A15C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSAssetPickerController-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0B15C5D6270078B2C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSAssetViewSelectionIndicator.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0C15C5D6270078B2C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSAssetViewSelectionIndicator@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0D15C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WSMainViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE0E15C5D6270078B2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WSMainViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE1015C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0515C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1115C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0615C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1215C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0815C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1415C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0B15C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1515C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0C15C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1615C5D6270078B2C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEC2AE0E15C5D6270078B2C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEC2AE1715C5D6320078B2C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DEDF87531753077200D9A9A4</string>
+				<string>DEDF87541753077200D9A9A4</string>
+				<string>DEDF87551753077200D9A9A4</string>
+				<string>DEDF87561753077200D9A9A4</string>
+				<string>DE0C6ECC1659592D00ED8496</string>
+				<string>DEBD0F1C15C5DDE600B9C9B5</string>
+				<string>DEBD0F1D15C5DDE600B9C9B5</string>
+				<string>DEC2AE0515C5D6270078B2C7</string>
+				<string>DEC2AE0315C5D6270078B2C7</string>
+				<string>DEC2AE0915C5D6270078B2C7</string>
+				<string>DEC2AE0715C5D6270078B2C7</string>
+				<string>DEC2AE0815C5D6270078B2C7</string>
+				<string>DEC2AE0A15C5D6270078B2C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC2AE1815C5D7820078B2C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DE960F5515C5F84C00BB5E0B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEDF87531753077200D9A9A4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSButtonBackground.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEDF87541753077200D9A9A4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSButtonBackground@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEDF87551753077200D9A9A4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSButtonBackgroundPressed.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEDF87561753077200D9A9A4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>WSButtonBackgroundPressed@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEDF87571753077200D9A9A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEDF87531753077200D9A9A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEDF87581753077200D9A9A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEDF87541753077200D9A9A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEDF87591753077200D9A9A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEDF87551753077200D9A9A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEDF875A1753077200D9A9A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEDF87561753077200D9A9A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEC0FEE156B32B600B1F0D2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEC2ADF315C5D5D60078B2C7</string>
+				<string>DEC2ADF715C5D5D60078B2C7</string>
+				<string>DEC2ADF915C5D5D60078B2C7</string>
+				<string>DEC2ADFB15C5D5D60078B2C7</string>
+				<string>DEC2ADFD15C5D5D60078B2C7</string>
+				<string>DEC2ADFF15C5D5D60078B2C7</string>
+				<string>DEC2AE0115C5D5D60078B2C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DEEC0FEF156B32B600B1F0D2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEEC1018156B333600B1F0D2</string>
+				<string>DEEC1017156B332900B1F0D2</string>
+				<string>DEEC0FF3156B32B600B1F0D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DEEC0FF0156B32B600B1F0D2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DEC2ADF515C5D5D60078B2C7</string>
+				<string>DEC2ADF615C5D5D60078B2C7</string>
+				<string>04876A061A31921900350563</string>
+				<string>DEC2ADF215C5D5D60078B2C7</string>
+				<string>DEC2ADF815C5D5D60078B2C7</string>
+				<string>DEC2ADFA15C5D5D60078B2C7</string>
+				<string>DEC2ADFC15C5D5D60078B2C7</string>
+				<string>DEC2ADFE15C5D5D60078B2C7</string>
+				<string>DEC2AE0015C5D5D60078B2C7</string>
+				<string>DE960F5615C5F84C00BB5E0B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DEEC0FF1156B32B600B1F0D2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DEEC1013156B32B600B1F0D2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DEEC0FEE156B32B600B1F0D2</string>
+				<string>DEEC0FEF156B32B600B1F0D2</string>
+				<string>DEEC0FF0156B32B600B1F0D2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>WSAssetPicker</string>
+			<key>productName</key>
+			<string>WSAssetPicker</string>
+			<key>productReference</key>
+			<string>DEEC0FF2156B32B600B1F0D2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>DEEC0FF2156B32B600B1F0D2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libWSAssetPicker.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DEEC0FF3156B32B600B1F0D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE017CFA155EC92F002E7BB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEC100F156B32B600B1F0D2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEAD_CODE_STRIPPING</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/WSAssetPicker.dst</string>
+				<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>src/WSAssetPicker-Prefix.pch</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>include/$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>STRIP_STYLE</key>
+				<string>non-global</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DEEC1010156B32B600B1F0D2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEAD_CODE_STRIPPING</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/WSAssetPicker.dst</string>
+				<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>src/WSAssetPicker-Prefix.pch</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>include/$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>STRIP_STYLE</key>
+				<string>non-global</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DEEC1013156B32B600B1F0D2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DEEC100F156B32B600B1F0D2</string>
+				<string>DEEC1010156B32B600B1F0D2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DEEC1017156B332900B1F0D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE7FF813155ECB0A00D7B3E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEC1018156B333600B1F0D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE017CF8155EC92F002E7BB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEC102A156B39AB00B1F0D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEEC0FF2156B32B600B1F0D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DEEC102B156B39AF00B1F0D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEEC0FF2156B32B600B1F0D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF8C127AA6E74EA5B04B6C1D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>DE017CEB155EC92F002E7BB0</string>
+</dict>
+</plist>
