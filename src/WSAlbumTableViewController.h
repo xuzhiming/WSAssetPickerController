@@ -18,9 +18,11 @@
 //  limitations under the License.
 
 #import <UIKit/UIKit.h>
+#import "WSAssetPickGroupDelegate.h"
 
 @class WSAssetPickerState;
 
 @interface WSAlbumTableViewController : UITableViewController
 @property (nonatomic, weak) WSAssetPickerState *assetPickerState;
+@property (nonatomic, weak)id<WSAssetPickGroupDelegate> assetPickdelegate;
 @end

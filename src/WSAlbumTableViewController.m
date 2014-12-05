@@ -145,6 +145,11 @@
     ALAssetsGroup *group = [self.assetGroups objectAtIndex:indexPath.row];
     [group setAssetsFilter:[ALAssetsFilter allPhotos]]; // TODO: Make this a delegate choice.
     
+    if ([_assetPickdelegate respondsToSelector:@selector(WSAssetPickGroup:with:)]) {
+        UIViewController *vc = [_assetPickdelegate WSAssetPickGroup:group with:self.assetPickerState];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     WSAssetTableViewController *assetTableViewController = [[WSAssetTableViewController alloc] initWithStyle:UITableViewStylePlain];
     assetTableViewController.assetPickerState = self.assetPickerState;
     assetTableViewController.assetsGroup = group;
