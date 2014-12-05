@@ -93,6 +93,10 @@
             return [weakSelf.delegate assetsTableViewCell:weakSelf shouldSelectAssetAtColumn:column];
         }];
         
+        assetViewColumn.block = ^(id target){
+            [weakSelf cloumnDidTap:target];
+        };
+
         // Observe the column's isSelected property.
         [assetViewColumn addObserver:self forKeyPath:@"isSelected" options:NSKeyValueObservingOptionNew context:NULL];
         
@@ -101,6 +105,19 @@
     
     _cellAssetViews = columns;
 }
+
+
+-(void) cloumnDidTap:(id) object
+{
+    if ([object isMemberOfClass:[WSAssetViewColumn class]]) {
+        WSAssetViewColumn *column = (WSAssetViewColumn *)object;
+        if ([self.delegate respondsToSelector:@selector(assetsTableViewCell:didTapAtColumn:)]) {
+            
+            [self.delegate assetsTableViewCell:self didTapAtColumn:column.column];
+        }
+    }
+}
+
 
 #define ASSET_VIEW_FRAME CGRectMake(0, 0, 75, 75)
 #define ASSET_VIEW_PADDING 4

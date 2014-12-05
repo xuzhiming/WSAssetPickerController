@@ -37,6 +37,14 @@
 
 #define ASSET_VIEW_FRAME CGRectMake(0, 0, 75, 75)
 
+#define ASSET_VIEW_BUTTON_IMAGE_WIDTH 23
+#define ASSET_VIEW_BUTTON_TOP_INSET 4
+#define ASSET_VIEW_BUTTON_BUTTOM_INSET 6
+
+
+#define SELECTED_IMAGE @"photo_select_asset_choose@2x.png"
+#define UN_SELECTED_IMAGE @"photo_select_asset_unchoose@2x.png"
+
 + (WSAssetViewColumn *)assetViewWithImage:(UIImage *)thumbnail
 {
     WSAssetViewColumn *assetView = [[WSAssetViewColumn alloc] initWithImage:thumbnail];
@@ -49,14 +57,33 @@
     if ((self = [super initWithFrame:ASSET_VIEW_FRAME])) {
         
         // Setup a tap gesture.
-        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userDidTapAction:)];
-        [self addGestureRecognizer:tapGestureRecognizer];
+        UITapGestureRecognizer *tapImageGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userDidTapImageAction:)];
+        [self addGestureRecognizer:tapImageGestureRecognizer];
         
         // Add the photo thumbnail.
         UIImageView *assetImageView = [[UIImageView alloc] initWithFrame:ASSET_VIEW_FRAME];
         assetImageView.contentMode = UIViewContentModeScaleToFill;
         assetImageView.image = thumbnail;
         [self addSubview:assetImageView];
+        
+        //set select tap
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userDidTapAction:)];
+        
+        UIView *button = [[UIView alloc] init];
+        button.backgroundColor = [UIColor clearColor];
+        UIImageView *imageView = [[UIImageView alloc] init];
+        imageView.backgroundColor = [UIColor clearColor];
+        CGFloat buttonFrameWidth = ASSET_VIEW_BUTTON_IMAGE_WIDTH + ASSET_VIEW_BUTTON_TOP_INSET + ASSET_VIEW_BUTTON_BUTTOM_INSET;
+        button.frame = CGRectMake(self.frame.size.width - buttonFrameWidth, 0, buttonFrameWidth, buttonFrameWidth);
+
+        [imageView setImage:[UIImage imageNamed:UN_SELECTED_IMAGE]];
+        [imageView setHighlightedImage:[UIImage imageNamed:SELECTED_IMAGE]];
+        imageView.frame = CGRectMake(ASSET_VIEW_BUTTON_TOP_INSET, ASSET_VIEW_BUTTON_TOP_INSET, ASSET_VIEW_BUTTON_IMAGE_WIDTH, ASSET_VIEW_BUTTON_IMAGE_WIDTH);
+        [button addSubview:imageView];
+        self.selectedView = imageView;
+        [self addSubview:button];
+        [button addGestureRecognizer:tapGestureRecognizer];
+        
     }
     return self;
 }
@@ -78,26 +105,27 @@
         [self didChangeValueForKey:@"isSelected"];
         
         // Update the selectedView.
-        self.selectedView.hidden = !_selected;
+//        self.selectedView.hidden = !_selected;
+        self.selectedView.highlighted = _selected;
+        
     }
     [self setNeedsDisplay];
 }
 
-#define SELECTED_IMAGE @"WSAssetViewSelectionIndicator.png"
 
-- (UIImageView *)selectedView
-{
-    if (!_selectedView) {
-        
-        // Lazily create the selectedView.
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:SELECTED_IMAGE]];
-        imageView.hidden = YES;
-        [self addSubview:imageView];
-        
-        _selectedView = imageView;
-    }
-    return _selectedView;
-}
+//- (UIImageView *)selectedView
+//{
+//    if (!_selectedView) {
+//        
+//        // Lazily create the selectedView.
+//        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:SELECTED_IMAGE]];
+//        imageView.hidden = YES;
+//        [self addSubview:imageView];
+//        
+//        _selectedView = imageView;
+//    }
+//    return _selectedView;
+//}
 
 
 #pragma mark - Actions
@@ -114,5 +142,20 @@
         self.selected = (canSelect && (self.selected == NO));
     }
 }
+
+
+
+-(void)userDidTapImageAction:(UITapGestureRecognizer *)sender
+{
+    // Tell the delegate.
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        //去预览图片
+        NSLog(@"preview image");
+        if (_block) {
+            _block(self);
+        }
+    }
+}
+
 
 @end

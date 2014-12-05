@@ -39,4 +39,8 @@
 
 - (void)assetsTableViewCell:(WSAssetsTableViewCell *)cell didSelectAsset:(BOOL)selected atColumn:(NSUInteger)column;
 
+@optional
+
+-(void) assetsTableViewCell:(WSAssetsTableViewCell *)cell didTapAtColumn:(NSUInteger) column;
+
 @end

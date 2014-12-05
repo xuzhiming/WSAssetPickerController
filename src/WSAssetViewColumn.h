@@ -18,11 +18,13 @@
 //  limitations under the License.
 
 #import <UIKit/UIKit.h>
+typedef  void(^TapImageAtColumnBlock)(id target);
 
 @interface WSAssetViewColumn : UIView
 
 @property (nonatomic) NSUInteger column;
 @property (nonatomic, getter=isSelected) BOOL selected;
+@property (nonatomic, copy) TapImageAtColumnBlock block;
 
 + (WSAssetViewColumn *)assetViewWithImage:(UIImage *)thumbnail;
 
