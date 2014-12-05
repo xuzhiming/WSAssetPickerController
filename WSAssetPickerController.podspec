@@ -1,7 +1,7 @@
 Pod::Spec.new do|s|
     s.name = "WSAssetPickerController"
 	s.platform = :ios, 5.0
-    s.version = "0.2.1"
+    s.version = "0.2.2"
     s.author = "Wes Smith"
     s.license = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
     s.homepage = "https://github.com/xuzhiming/WSAssetPickerController"
@@ -13,6 +13,6 @@ Pod::Spec.new do|s|
     s.requires_arc = true
     #s.resources = ["Images/*.png"]
     #s.resource_bundles = {'WSAssetBundle' => ['Images/*.png']}
-    s.resources = "Images/photo_select_asset_choose@2x.png", "Images/photo_select_asset_unchoose@2x.png"
+    s.resources = "Images/photo_select_asset_choose@2x.png","Images/photo_select_asset_unchoose@2x.png"
     #s.resources = "demo/WSAssetViewSelectionIndicator.png","demo/WSAssetViewSelectionIndicator@2x.png"
 end
