@@ -119,8 +119,10 @@
 }
 
 
-#define ASSET_VIEW_FRAME CGRectMake(0, 0, 75, 75)
 #define ASSET_VIEW_PADDING 4
+#define ASSET_VIEW_FRAME CGRectMake(0, 0, ([UIScreen mainScreen].bounds.size.width - ASSET_VIEW_PADDING*(5))/4.f, ([UIScreen mainScreen].bounds.size.width - ASSET_VIEW_PADDING*(5))/4.f)
+//#define ASSET_VIEW_FRAME CGRectMake(0, 0, 75, 75)
+//#define ASSET_VIEW_PADDING 4
 
 - (void)layoutSubviews
 {
