@@ -1,3 +1,7 @@
+# Exclude custom files
+pushspec.sh
+tag0.2.2.sh
+
 # Exclude Cocoapods
 Pods/
 
