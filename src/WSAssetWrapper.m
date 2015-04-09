@@ -38,4 +38,7 @@
     return self;
 }
 
+-(CGImageRef)thumbnail{
+    return _asset.thumbnail;
+}
 @end

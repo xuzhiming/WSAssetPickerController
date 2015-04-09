@@ -191,7 +191,7 @@
     assetWrapper.selected = selected;
     
     // Update the state object's selectedAssets.
-    [self.assetPickerState changeSelectionState:selected forAsset:assetWrapper.asset];
+    [self.assetPickerState changeSelectionState:selected forAsset:assetWrapper];
 
     // Update navigation bar with selected count and limit variables 
     dispatch_async(dispatch_get_main_queue(), ^{

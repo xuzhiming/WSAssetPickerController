@@ -62,7 +62,7 @@
     return [[self.selectedAssetsSet array] copy];
 }
 
-- (void)changeSelectionState:(BOOL)selected forAsset:(ALAsset *)asset
+- (void)changeSelectionState:(BOOL)selected forAsset:(id)asset
 {
     if (selected) {
         [self.selectedAssetsSet addObject:asset];

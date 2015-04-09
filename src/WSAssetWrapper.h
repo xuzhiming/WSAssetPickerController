@@ -24,9 +24,12 @@
 
 @property (nonatomic, strong, readonly) ALAsset *asset;
 @property (nonatomic, getter = isSelected) BOOL selected;
+@property (nonatomic, strong) NSString *descript;
 
 + (WSAssetWrapper *)wrapperWithAsset:(ALAsset *)asset;
 
 - (id)initWithAsset:(ALAsset *)asset;
+
+-(CGImageRef)thumbnail;
 
 @end
