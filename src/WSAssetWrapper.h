@@ -25,6 +25,7 @@
 @property (nonatomic, strong, readonly) ALAsset *asset;
 @property (nonatomic, getter = isSelected) BOOL selected;
 @property (nonatomic, strong) NSString *descript;
+@property (nonatomic, assign) BOOL bOriginal;
 
 + (WSAssetWrapper *)wrapperWithAsset:(ALAsset *)asset;
 

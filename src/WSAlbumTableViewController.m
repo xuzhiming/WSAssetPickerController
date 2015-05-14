@@ -80,7 +80,7 @@
         }
         
         // Add the group to the array.
-        [self.assetGroups addObject:group];
+        [self.assetGroups insertObject:group atIndex:0];
         
         // Reload the tableview on the main thread.
         dispatch_async(dispatch_get_main_queue(), ^{
