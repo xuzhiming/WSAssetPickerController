@@ -44,8 +44,8 @@
 #define ASSET_VIEW_BUTTON_BUTTOM_INSET 6
 
 
-#define SELECTED_IMAGE @"photo_select_asset_choose@2x.png"
-#define UN_SELECTED_IMAGE @"photo_select_asset_unchoose@2x.png"
+#define SELECTED_IMAGE @"WSAsset.bundle/photo_select_asset_choose@2x.png"
+#define UN_SELECTED_IMAGE @"WSAsset.bundle/photo_select_asset_unchoose@2x.png"
 
 + (WSAssetViewColumn *)assetViewWithImage:(UIImage *)thumbnail
 {

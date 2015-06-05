@@ -15,5 +15,6 @@ Pod::Spec.new do|s|
     #s.resource_bundles = {'WSAssetBundle' => ['Images/*.png']}
     #s.resources = "demo/photo_select_asset_choose@2x.png","demo/photo_select_asset_unchoose@2x.png"
     #s.resources = "demo/WSAssetViewSelectionIndicator.png","demo/WSAssetViewSelectionIndicator@2x.png"
-    s.resources = "demo/photo_select_asset_choose@2x.png","demo/photo_select_asset_unchoose@2x.png"
+    #s.resources = "demo/photo_select_asset_choose@2x.png","demo/photo_select_asset_unchoose@2x.png"
+    s.resources = "demo/WSAsset.bundle"
 end

@@ -21,7 +21,7 @@
 #import "WSAssetPickerState.h"
 #import "WSAssetTableViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-
+#import "WSUtility.h"
 
 @interface WSAlbumTableViewController ()
 @property (nonatomic, strong) NSMutableArray *assetGroups; // Model (all groups of assets).
@@ -62,22 +62,28 @@
 {
     [super viewDidLoad];
 
-    self.navigationItem.title = @"Loading…";
+    self.navigationItem.title = [[WSUtility bundle] localizedStringForKey:@"g_loading" value:nil table:@"assetstr"];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel 
                                                                                            target:self 
                                                                                            action:@selector(cancelButtonAction:)];
     
+    self.navigationItem.title = [[WSUtility bundle] localizedStringForKey:@"g_message_photo" value:nil table:@"assetstr"];//NSLocalizedStringFromTable(@"g_message_photo", @"assetstr", nil);//@"Albums";
     [self.assetPickerState.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        
-        // If group is nil, the end has been reached.
-        if (group == nil) {
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                self.navigationItem.title = @"Albums";
-            });
-            return;
+
+        [group setAssetsFilter:[ALAssetsFilter allPhotos]];
+        NSInteger count = [group numberOfAssets];
+        if (count == 0) {
+            return ;
         }
+        // If group is nil, the end has been reached.
+//        if (group == nil) {
+//            
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.navigationItem.title = @"Albums";
+//            });
+//            return;
+//        }
         
         // Add the group to the array.
         [self.assetGroups insertObject:group atIndex:0];
