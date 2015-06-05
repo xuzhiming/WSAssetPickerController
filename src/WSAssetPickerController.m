@@ -62,8 +62,8 @@
 {
     WSAlbumTableViewController *albumTableViewController = [[WSAlbumTableViewController alloc] initWithStyle:UITableViewStylePlain];
     [self setViewControllers:@[albumTableViewController] animated:NO];
-    self.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-    self.toolbar.barStyle = UIBarStyleBlackTranslucent;
+    self.navigationBar.barStyle = UIBarStyleDefault;//UIBarStyleBlackTranslucent;
+    self.toolbar.barStyle = UIBarStyleDefault;//UIBarStyleBlackTranslucent;
     albumTableViewController.assetPickerState = self.assetPickerState;
 }
 
