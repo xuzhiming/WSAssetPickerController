@@ -1,7 +1,7 @@
 Pod::Spec.new do|s|
     s.name = "WSAssetPickerController"
 	s.platform = :ios, 5.0
-    s.version = "0.2.2"
+    s.version = "0.2.3"
     s.author = "Wes Smith"
     s.license = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
     s.homepage = "https://github.com/xuzhiming/WSAssetPickerController"
